@@ -1,6 +1,9 @@
 ﻿
 # Load posh-git example profile
-. 'C:\Users\piotr\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
+#. 'C:\Users\piotr\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
+
+Import-Module posh-git
+
 
 # Utf8
 # https://stackoverflow.com/questions/40098771/changing-powershells-default-output-encoding-to-utf-8
