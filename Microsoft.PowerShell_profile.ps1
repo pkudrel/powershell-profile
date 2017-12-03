@@ -1,4 +1,8 @@
-﻿
+﻿# do not install PsGet. Install insted PowershellGet
+# https://til.secretgeek.net/powershell/psget_conflicts_with_PowerShellGet.html
+# https://superuser.com/questions/996417/what-is-install-module-command-in-powershell
+# https://stackoverflow.com/questions/37823964/whats-the-difference-between-chocolatey-oneget-psget-nuget
+
 # Load posh-git example profile
 #. 'C:\Users\piotr\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
 
@@ -23,3 +27,5 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+
