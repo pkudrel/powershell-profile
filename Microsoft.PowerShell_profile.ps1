@@ -17,3 +17,9 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
             [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
          }
  }
+
+# Chocolatey profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
